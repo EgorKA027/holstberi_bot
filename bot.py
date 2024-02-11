@@ -3,11 +3,10 @@ from telebot import types
 import time
 
 # Токен бота (ключ для доступа и программирования бота)
-TOKEN = '6775598496:AAGzBUo7k3Z6jNIFp6cgl4X1lIE_4hmsCDw' 
+TOKEN = 'ТОКЕН_БОТА' 
 
 
-seller = 540425921
-#seller = 718959170
+seller = "ID пользователя кому будут приходить сообщения об оформленных заказах"
 bot = telebot.TeleBot(TOKEN)
 
 # Обработчик команды /stop
@@ -543,15 +542,7 @@ def calculation_nostretcher(width, length, count):
 # Контакты продавца 
 @bot.message_handler(commands = ['contacts'])
 def handler_order(message):
-    bot.send_message(message.chat.id, """*По вопросам о товаре и товаре:*
-Александр Адреевич - продавец
-номер - 89168626450
-почта - Kotovsasha2001@gmail.com
-
-*По техническим вопросам и работе бота:*
-Егор Андреевич - технический специалист
-номер - 89772694131
-почта - egor.kainov@bk.ru""",  parse_mode='Markdown')
+    bot.send_message(message.chat.id, """*По вопросам о товаре и товаре:*""",  parse_mode='Markdown')
 
 
 # Включение бота 
