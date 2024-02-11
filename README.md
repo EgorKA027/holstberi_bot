@@ -20,7 +20,10 @@ git clone https://github.com/EgorKA027/holstberi_bot.git
 pip install -r requirements.txt
 ```
 ### 3. Запуск бота:
-Запустите файл bot.py для активации бота.
+1. В файлу bot.py:
+- TOKEN замените на токен вашего бота
+- seller замените на id продовца (чтобы ему приходила информация о заказах)
+- Запустите файл bot.py для активации бота.
 ```
 python bot.py
 ```
